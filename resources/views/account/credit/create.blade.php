@@ -1,21 +1,21 @@
 @extends('layouts.account')
 
 @section('title')
-    Tambah Uang Keluar - PMI
+    Tambah Permintaan Darah - PMI
 @stop
 
 @section('content')
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1> UANG KELUAR</h1>
+                <h1> Permintaan Darah</h1>
             </div>
 
             <div class="section-body">
 
                 <div class="card">
                     <div class="card-header">
-                        <h4><i class="fas fa-money-check-alt"></i> TAMBAH UANG KELUAR</h4>
+                        <h4><i class="fas fa-money-check-alt"></i> TAMBAH Permintaan Darah</h4>
                     </div>
 
                     <div class="card-body">
@@ -26,8 +26,8 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>NOMINAL (Rp.)</label>
-                                        <input type="text" name="nominal" value="{{ old('nominal') }}" placeholder="Masukkan Nominal" class="form-control currency">
+                                        <label>Jumlah Kantong</label>
+                                        <input type="text" name="nominal" value="{{ old('nominal') }}" placeholder="Masukkan jumlah kantong darah" class="form-control currency">
 
                                         @error('nominal')
                                         <div class="invalid-feedback" style="display: block">
@@ -53,9 +53,9 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>KATEGORI</label>
+                                        <label>Rumah Sakit</label>
                                         <select class="form-control select2" name="category_id" style="width: 100%">
-                                            <option value="">-- PILIH KATEGORI --</option>
+                                            <option value="">-- PILIH Rumah Sakit --</option>
                                             @foreach ($categories as $hasil)
                                                 <option value="{{ $hasil->id }}"> {{ $hasil->name }}</option>
                                             @endforeach

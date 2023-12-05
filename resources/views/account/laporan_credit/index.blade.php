@@ -1,21 +1,21 @@
 @extends('layouts.account')
 
 @section('title')
-    Laporan Uang  Keluar - PMI
+    Laporan Permintaan Darah - PMI
 @stop
 
 @section('content')
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1> LAPORAN UANG KELUAR</h1>
+                <h1> LAPORAN Permintaan Darah</h1>
             </div>
 
             <div class="section-body">
 
                 <div class="card">
                     <div class="card-header">
-                        <h4><i class="fas fa-chart-area"></i> LAPORAN UANG KELUAR</h4>
+                        <h4><i class="fas fa-chart-area"></i> LAPORAN Permintaan Darah</h4>
                     </div>
 
                     <div class="card-body">
@@ -49,7 +49,7 @@
                 @if (isset($credit))
                     <div class="card">
                         <div class="card-header">
-                            <h4><i class="fas fa-chart-area"></i> LAPORAN UANG KELUAR</h4>
+                            <h4><i class="fas fa-chart-area"></i> LAPORAN Permintaan Darah</h4>
                         </div>
 
                         <div class="card-body">

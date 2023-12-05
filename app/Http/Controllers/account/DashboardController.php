@@ -25,10 +25,10 @@ class DashboardController extends Controller
     public function index()
     {
 
-        $uang_masuk_bulan_ini  = DB::table('debit')
-            ->selectRaw('sum(nominal) as nominal')
-            ->whereYear('debit_date', Carbon::now()->year)
-            ->whereMonth('debit_date', Carbon::now()->month)
+        $uang_masuk_bulan_ini  = DB::table('pendonor')
+            ->selectRaw('sum(jml) as nominal')
+            ->whereYear('created_at', Carbon::now()->year)
+            ->whereMonth('created_at', Carbon::now()->month)
             ->where('user_id', Auth::user()->id)
             ->first();
 
@@ -39,10 +39,10 @@ class DashboardController extends Controller
             ->where('user_id', Auth::user()->id)
             ->first();
 
-        $uang_masuk_bulan_lalu  = DB::table('debit')
-            ->selectRaw('sum(nominal) as nominal')
-            ->whereYear('debit_date', Carbon::now()->year)
-            ->whereMonth('debit_date', Carbon::now()->subMonths())
+        $uang_masuk_bulan_lalu  = DB::table('pendonor')
+            ->selectRaw('sum(jml) as nominal')
+            ->whereYear('created_at', Carbon::now()->year)
+            ->whereMonth('created_at', Carbon::now()->subMonths())
             ->where('user_id', Auth::user()->id)
             ->first();
 
@@ -53,8 +53,8 @@ class DashboardController extends Controller
             ->where('user_id', Auth::user()->id)
             ->first();
 
-        $uang_masuk_selama_ini  = DB::table('debit')
-            ->selectRaw('sum(nominal) as nominal')
+        $uang_masuk_selama_ini  = DB::table('pendonor')
+            ->selectRaw('sum(jml) as nominal')
             ->where('user_id', Auth::user()->id)
             ->first();
 

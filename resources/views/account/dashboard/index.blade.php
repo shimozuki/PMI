@@ -16,14 +16,14 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <div class="card card-statistic-2">
                         <div class="card-icon shadow-primary bg-primary">
-                            <i class="fas fa-money-check-alt"></i>
+                            <i class="fas fa-box"></i>
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
                                 <h4>Stok Darah A </h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ rupiah($saldo_selama_ini) }}
+                                {{ $saldo_selama_ini }}
                             </div>
                         </div>
                     </div>
@@ -31,14 +31,14 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <div class="card card-statistic-2">
                         <div class="card-icon shadow-primary bg-primary">
-                            <i class="fas fa-money-check-alt"></i>
+                            <i class="fas fa-box"></i>
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
                                 <h4>Stok Darah B</h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ rupiah($saldo_bulan_ini) }}
+                                {{ $saldo_bulan_ini }}
                             </div>
                         </div>
                     </div>
@@ -46,14 +46,14 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <div class="card card-statistic-2">
                         <div class="card-icon shadow-primary bg-primary">
-                            <i class="fas fa-money-check-alt"></i>
+                            <i class="fas fa-box"></i>
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
                                 <h4>Stok Darah O</h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ rupiah($saldo_bulan_lalu) }}
+                                {{ $saldo_bulan_lalu }}
                             </div>
                         </div>
                     </div>
@@ -61,14 +61,14 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <div class="card card-statistic-2">
                         <div class="card-icon shadow-primary bg-primary">
-                            <i class="fas fa-money-check-alt"></i>
+                            <i class="fas fa-box"></i>
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
                                 <h4>Stok Darah AB</h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ rupiah($saldo_bulan_lalu) }}
+                                {{ $saldo_bulan_lalu }}
                             </div>
                         </div>
                     </div>

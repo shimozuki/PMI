@@ -1,21 +1,21 @@
 @extends('layouts.account')
 
 @section('title')
-    Edit Uang keluar - PMI
+    Edit Permintaan Darah - PMI
 @stop
 
 @section('content')
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1> UANG KELUAR</h1>
+                <h1> Permintaan Darah</h1>
             </div>
 
             <div class="section-body">
 
                 <div class="card">
                     <div class="card-header">
-                        <h4><i class="fas fa-money-check-alt"></i> EDIT UANG KELUAR</h4>
+                        <h4><i class="fas fa-money-check-alt"></i> EDIT Permintaan Darah</h4>
                     </div>
 
                     <div class="card-body">

@@ -87,25 +87,25 @@
                         <li class="menu-header">MAIN MENU</li>
                         <li class="{{ setActive('account/dashboard') }}"><a class="nav-link" href="{{ route('account.dashboard.index') }}"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
                         <li class="dropdown {{ setActive('account/categories_debit'). setActive('account/debit') }}">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-wallet"></i><span>Donor Darah</span></a>
+                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-box"></i><span>Donor Darah</span></a>
                             <ul class="dropdown-menu">
                                 <li class="{{ setActive('account/categories_debit') }}"><a class="nav-link" href="{{ route('account.categories_debit.index') }}"><i class="fas fa-dice-d6"></i> Golongan Darah</a></li>
-                                <li class="{{ setActive('account/debit') }}"><a class="nav-link" href="{{ route('account.debit.index') }}"><i class="fas fa-money-check-alt"></i> Donor</a></li>
+                                <li class="{{ setActive('account/debit') }}"><a class="nav-link" href="{{ route('account.debit.index') }}"><i class="fas fa-ambulance"></i> Donor</a></li>
                             </ul>
                         </li>
                         <li class="dropdown {{ setActive('account/categories_credit'). setActive('account/credit') }}">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-wallet"></i><span>Permintaan Darah</span></a>
+                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-box"></i><span>Permintaan Darah</span></a>
                             <ul class="dropdown-menu">
                                 <li class="{{ setActive('account/categories_credit') }}"><a class="nav-link" href="{{ route('account.categories_credit.index') }}"><i class="fas fa-hospital"></i> Rumah Sakit</a></li>
-                                <li class="{{ setActive('account/credit') }}"><a class="nav-link" href="{{ route('account.credit.index') }}"><i class="fas fa-money-check-alt"></i> UANG KELUAR</a></li>
+                                <li class="{{ setActive('account/credit') }}"><a class="nav-link" href="{{ route('account.credit.index') }}"><i class="fas fa-ambulance"></i> Permintaan Darah</a></li>
                             </ul>
                         </li>
 
                         <li class="dropdown {{ setActive('account/laporan_debit'). setActive('account/laporan_credit') }}">
                             <a href="#" class="nav-link has-dropdown"><i class="fas fa-chart-pie"></i><span>Laporan</span></a>
                             <ul class="dropdown-menu">
-                                <li class="{{ setActive('account/laporan_debit') }}"><a class="nav-link" href="{{ route('account.laporan_debit.index') }}"><i class="fas fa-chart-line"></i> UANG MASUK</a></li>
-                                <li class="{{ setActive('account/laporan_credit') }}"><a class="nav-link" href="{{ route('account.laporan_credit.index') }}"><i class="fas fa-chart-area"></i> UANG KELUAR</a></li>
+                                <li class="{{ setActive('account/laporan_debit') }}"><a class="nav-link" href="{{ route('account.laporan_debit.index') }}"><i class="fas fa-chart-line"></i> Pendonor</a></li>
+                                <li class="{{ setActive('account/laporan_credit') }}"><a class="nav-link" href="{{ route('account.laporan_credit.index') }}"><i class="fas fa-chart-area"></i> Permintaan Darah</a></li>
                                 <li><a class="nav-link" href="index-0.html"><i class="fas fa-chart-pie"></i> SEMUA</a></li>
                             </ul>
                         </li>

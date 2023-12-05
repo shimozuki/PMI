@@ -1,21 +1,21 @@
 @extends('layouts.account')
 
 @section('title')
-    Uang Keluar - PMI
+    Permintaan Darah - PMI
 @stop
 
 @section('content')
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1> UANG KELUAR</h1>
+                <h1> Permintaan Darah</h1>
             </div>
 
             <div class="section-body">
 
                 <div class="card">
                     <div class="card-header">
-                        <h4><i class="fas fa-money-check-alt"></i> UANG KELUAR</h4>
+                        <h4><i class="fas fa-money-check-alt"></i> Permintaan Darah</h4>
                     </div>
 
                     <div class="card-body">
@@ -39,8 +39,8 @@
                                 <thead>
                                 <tr>
                                     <th scope="col" style="text-align: center;width: 6%">NO.</th>
-                                    <th scope="col">KATEGORI</th>
-                                    <th scope="col">NOMINAL</th>
+                                    <th scope="col">Rumah Sakit</th>
+                                    <th scope="col">Kantong</th>
                                     <th scope="col">KETERANGAN</th>
                                     <th scope="col">TANGGAL</th>
                                     <th scope="col" style="width: 15%;text-align: center">AKSI</th>
