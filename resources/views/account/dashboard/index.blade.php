@@ -23,7 +23,7 @@
                                 <h4>Stok Darah A </h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ $gola }}
+                                {{ $gola->jumlah }}
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                                 <h4>Stok Darah B</h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ $golb }}
+                                {{ $golb->jumlah }}
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                                 <h4>Stok Darah O</h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ $golo }}
+                                {{ $golo->jumlah }}
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                                 <h4>Stok Darah AB</h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ $golab }}
+                                {{ $golab->jumlah }}
                             </div>
                         </div>
                     </div>
