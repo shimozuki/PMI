@@ -65,22 +65,22 @@ class DashboardController extends Controller
 
 
         //saldo bulan ini
-        $b = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 1);
+        $golb = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 1);
 
         //saldo bulan lalu
-        $o = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 2);
+        $golo = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 2);
 
         //saldo selama ini
-        $a = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 3);
+        $gola = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 3);
 
-        $ab = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 4);
+        $golab = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 4);
 
 
         /**
          * chart
          */
 
-        return view('account.dashboard.index', compact('a','b', 'o', 'ab'));
+        return view('account.dashboard.index', compact('gola','golb', 'golo', 'golab'));
     }
 
 }
