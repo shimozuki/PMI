@@ -65,7 +65,7 @@ class DashboardController extends Controller
 
 
         //saldo bulan ini
-        $B = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 1);
+        $b = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 1);
 
         //saldo bulan lalu
         $o = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 2);
