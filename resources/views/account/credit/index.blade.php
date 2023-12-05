@@ -54,7 +54,7 @@
                                     <tr>
                                         <th scope="row" style="text-align: center">{{ $no }}</th>
                                         <td>{{ $hasil->name }}</td>
-                                        <td>{{ $hasil->nominal } Kantong}</td>
+                                        <td>{{ $hasil->nominal }} Kantong</td>
                                         <td>{{ $hasil->description }}</td>
                                         <td>{{ $hasil->credit_date }}</td>
                                         <td class="text-center">
