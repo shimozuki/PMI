@@ -23,7 +23,7 @@
                                 <h4>Stok Darah A </h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ $saldo_selama_ini }}
+                                {{ $a }}
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                                 <h4>Stok Darah B</h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ $saldo_bulan_ini }}
+                                {{ $b }}
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                                 <h4>Stok Darah O</h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ $saldo_bulan_lalu }}
+                                {{ $o }}
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                                 <h4>Stok Darah AB</h4>
                             </div>
                             <div class="card-body" style="font-size: 20px">
-                                {{ $saldo_bulan_lalu }}
+                                {{ $ab }}
                             </div>
                         </div>
                     </div>

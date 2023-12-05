@@ -65,20 +65,22 @@ class DashboardController extends Controller
 
 
         //saldo bulan ini
-        $saldo_bulan_ini = $uang_masuk_bulan_ini->nominal - $uang_keluar_bulan_ini->nominal;
+        $B = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 1);
 
         //saldo bulan lalu
-        $saldo_bulan_lalu     = $uang_masuk_bulan_lalu->nominal - $uang_keluar_bulan_lalu->nominal;
+        $o = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 2);
 
         //saldo selama ini
-        $saldo_selama_ini = $uang_masuk_selama_ini->nominal - $uang_keluar_selama_ini->nominal;
+        $A = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 3);
+
+        $ab = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 4);
 
 
         /**
          * chart
          */
 
-        return view('account.dashboard.index', compact('saldo_selama_ini','saldo_bulan_ini', 'saldo_bulan_lalu'));
+        return view('account.dashboard.index', compact('a','b', 'o', 'ab'));
     }
 
 }
