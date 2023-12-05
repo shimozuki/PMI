@@ -64,16 +64,13 @@ class DashboardController extends Controller
             ->first();
 
 
-        //saldo bulan ini
-        $golb = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 1);
+        $golb = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 1)->first();
 
-        //saldo bulan lalu
-        $golo = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 2);
+        $golo = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 2)->first();
 
-        //saldo selama ini
-        $gola = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 3);
+        $gola = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 3)->first();
 
-        $golab = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 4);
+        $golab = DB::table('pendonor')->selectRaw('sum(jml) as jumlah')->where('category_id', 4)->first();
 
 
         /**
